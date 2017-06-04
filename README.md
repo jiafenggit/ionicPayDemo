@@ -12,4 +12,22 @@
 target-dir="src/com/sharedParking/mz/wxapi"，
 把其中com/sharedParking/zm改为自己的 包名。
 再有 修改插件下WxPayEntryActivity.java中的包名，同上面两处一 致
+1.cd 项目路径
 
+2.添加ios和安卓平台（如果没有添加一下）：
+
+ionic platform add ios
+
+ionic platform add android
+
+3.给项目添加支付宝和微信插件（这里才是关键）：
+
+cordova plugin add 支付宝插件路径
+
+cordova plugin add 微信插件路径
+
+例如：
+
+ cordova plugin add /Users/david/Documents/pay/com.yoopoon.cordova.plugin.alipay
+
+cordova plugin add /Users/david/Documents/pay/cordova.weixin.pay
